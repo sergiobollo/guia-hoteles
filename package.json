@@ -4,7 +4,8 @@
   "description": "Nuestro primer proyecto de Nodejs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sergiobollo/guia-hoteles/issues"
   },
-  "homepage": "https://github.com/sergiobollo/guia-hoteles#readme"
+  "homepage": "https://github.com/sergiobollo/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
