@@ -41,49 +41,88 @@
     <div class="jumbotron jumbotron-fluid">
         <h1 class = "display-4 text-center">Hotel Responsive</h1>
     </div>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-            </ol>
-            </nav>
-            <div class = "my-5">            
-                <span>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </span>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+        </nav>
+        <h1>Dejanos tu comentario</h1>
+        <form>
+            <div class = "form-row">
+                <div class ="form-group col-sm-6">
+                    <label for = "nombre">Nombre</label>
+                    <input type = "text" class = "form-control" id = "nombre" placeholder = "Ingrese su nombre"> 
+                </div>
+                <div class ="form-group col-sm-6">
+                    <label for = "apellido">Apellido</label>
+                    <input type = "text" class = "form-control" id = "apellido" placeholder = "Ingrese su apellido"> 
+                </div>
             </div>
-        </div>
-
-<footer class="sticky-bottom">
-    <div class="row">
-        <div class="col-4 col-sm">
-            <div class="d-flex flex-column">
-                <p><a href="https://www.facebook.com">Facebook</a></p>
-                <p><a href="https://www.twitter.com">Twitter</a></p>
-                <p><a href="https://www.instagram.com">Instagram</a></p>
-                <p><a href="https://www.google.com">Google+</a></p>
+            <div class ="form-group">
+                <label for = "email">Email</label>
+                <input type = "text" class = "form-control" id = "emal" placeholder = "Ingrese su email"> 
             </div>
-        </div>
-        <div class="col-4 col-sm">
-            <address  class="d-flex flex-column align-items-center text-center">
-            <h6>Contacto</h6>
-            <p><span class="oi oi-home "></span>Av Vista 2020</p>
-            <p><span class="oi oi-phone"></span>+5491112345678</p>
-            <p><span class="oi oi-inbox"></span>info@hotelresponsive.com</p>
-            </address>
-        </div>
-        <div class="col-4 col-sm">
-            <div class="d-flex flex-column align-items-end">     
-                <p><a href="#">Nosotros</a></p>
-                <p><a href="#">Precios</a></p>
-                <p><a href="#">Terminos</a></p>
-                <p><a href="#">Como llegar</a></p>
+            <div class = "form-row">
+                <div class ="form-group col-sm-6">
+                    <label for = "domicilio">Domicilio</label>
+                    <input type = "text" class = "form-control" id = "domicilio" placeholder = "Ingrese su domicilio"> 
+                </div>
+                <div class ="form-group col-sm-6">
+                    <label for = "provincia">Provincia</label>
+                    <select id = "provincia" class = "form-control">
+                            <option selected>Capital Federal</option>
+                            <option>Buenos Aires</option>
+                            <option>Cordiba</option>
+                            <option>Santa Fe</option>
+                            <option>Mendoza</option>
+                    </select>
+                </div>
             </div>
-        </div>
+            <div class ="form-group">
+                <label for = "comentario">Comentario</label>
+                <textarea id = "comentario" class = "form-control" rows = "10"></textarea>
+            </div>
+            <div class ="form-group">
+                <div class = "form-check">            
+                    <input class ="form-check-input" type = "checkbox" id = "contactarme">
+                    <label class = "form-check-label" for = "contactarme">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type = "submit" class = "btn btn-primary">Enviar</button>
+        </form>
     </div>
-</footer>
 
- 
+    <footer class="sticky-bottom">
+        <div class="row">
+            <div class="col-4 col-sm">
+                <div class="d-flex flex-column">
+                    <p><a href="https://www.facebook.com">Facebook</a></p>
+                    <p><a href="https://www.twitter.com">Twitter</a></p>
+                    <p><a href="https://www.instagram.com">Instagram</a></p>
+                    <p><a href="https://www.google.com">Google+</a></p>
+                </div>
+            </div>
+            <div class="col-4 col-sm">
+                <address  class="d-flex flex-column align-items-center text-center">
+                <h6>Contacto</h6>
+                <p><span class="oi oi-home "></span>Av Vista 2020</p>
+                <p><span class="oi oi-phone"></span>+5491112345678</p>
+                <p><span class="oi oi-inbox"></span>info@hotelresponsive.com</p>
+                </address>
+            </div>
+            <div class="col-4 col-sm">
+                <div class="d-flex flex-column align-items-end">     
+                    <p><a href="#">Nosotros</a></p>
+                    <p><a href="#">Precios</a></p>
+                    <p><a href="#">Terminos</a></p>
+                    <p><a href="#">Como llegar</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- jQuery, Popper.js, and Bootstrap JS -->
     <script src = "node_modules/jquery/dist/jquery.min.js"></script>
     <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
