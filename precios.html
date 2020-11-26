@@ -131,18 +131,48 @@
             </div>
         </div>
         <div class = "tab-pane fade show" id = "tarjetas" role = "tab-panel" aria-labelledby = "tarjetas-tab">
-            <div class="d-flex justify-content-center" id = "tarjetas-tab">
-                <div class="card" style = "width: 18rem;">
-                    <div class = "card-header" style = "background-color: blue; color: white;">
-                        <h5 class = "card-title">Tarjetas aceptadas</h5>
+            <div class="accordion" id="accordionTarjetas">
+                <div class="card">
+                    <div class="card-header" id="headingVisa">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseVisa" aria-expanded="false" aria-controls="collapseVisa">
+                        Visa
+                        </button>
+                    </h2>
                     </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Visa</li>
-                        <li class="list-group-item">Mastercard</li>
-                        <li class="list-group-item">American Express</li>
-                        <li class="list-group-item">Tarjeta Naranja</li>
-                        <li class="list-group-item">Mercado Pago</li>
-                    </ul>
+                    <div id="collapseVisa" class="collapse" aria-labelledby="headingVisa" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                    Hasta 12 cuotas sin interés
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingMastercard">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseMastercard" aria-expanded="false" aria-controls="collapseMastercard">
+                        Mastercard
+                        </button>
+                    </h2>
+                    </div>
+                    <div id="collapseMastercard" class="collapse" aria-labelledby="headingMastercard" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                    Hasta 6 cuotas sin interés
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingAmerican">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseAmerican" aria-expanded="false" aria-controls="collapseAmerican">
+                        American Express
+                        </button>
+                    </h2>
+                    </div>
+                    <div id="collapseAmerican" class="collapse" aria-labelledby="headingAmerican" data-parent="#accordionTarjetas">
+                    <div class="card-body">
+                    Hasta 3 cuotas sin interés
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
