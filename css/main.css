@@ -28,3 +28,7 @@ address p span {
 .tab-content {
     padding-top: 10px;
 }
+
+.carousel {
+    max-width: 90vh;
+}
