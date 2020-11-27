@@ -1,0 +1,58 @@
+$amarillo: #eaf04d;
+$rojo: #ed3232;
+$verde: #35f032;
+
+@mixin margenes($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin pad($top, $bottom, $left, $right){
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin fondo($color){
+    background-color: $color;
+}
+
+.jumbotron {
+    @include fondo($verde);
+    @include margenes(50px, 10px);
+    color: $amarillo;
+}
+footer {
+    @include pad(10px, 0px, 12px, 12px);
+    @include fondo($rojo);
+    @include margenes(10px, 0px);
+    color: $amarillo;
+}
+
+footer a {
+    color: $amarillo;
+}
+
+.card-hotel p {
+    @include margenes(20px, 0px);
+    @include pad(0px, 0px, 10px, 0px);
+    @include fondo($amarillo);
+    color: $rojo;
+}
+
+.btn-reserva {
+    border-radius: 5px;
+}
+
+address p span {
+    @include pad(0px, 0px, 0px, 10px);
+}
+
+.tab-content {
+    @include pad(10px, 0px, 0px, 0px);
+}
+
+.carousel {
+    max-width: 90vh;
+}
