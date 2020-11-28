@@ -2,7 +2,8 @@
   background-color: #2ebf41;
   margin-top: 50px;
   margin-bottom: 10px;
-  color: #ffff00; }
+  color: #ffff00;
+}
 
 footer {
   padding-top: 10px;
@@ -12,10 +13,12 @@ footer {
   background-color: #ed3232;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: #ffff00; }
+  color: #ffff00;
+}
 
 footer a {
-  color: #ffff00; }
+  color: #ffff00;
+}
 
 .card-hotel p {
   margin-top: 20px;
@@ -25,22 +28,29 @@ footer a {
   padding-left: 10px;
   padding-right: 0px;
   background-color: #ffff00;
-  color: #ed3232; }
+  color: #ed3232;
+}
 
 .btn-reserva {
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
 address p span {
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 .tab-content {
   padding-top: 10px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-right: 0px; }
+  padding-right: 0px;
+}
 
 .carousel {
-  max-width: 90vh; }
+  max-width: 90vh;
+}
+
+/*# sourceMappingURL=styles.css.map */

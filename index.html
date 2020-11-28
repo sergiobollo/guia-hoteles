@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -360,38 +360,11 @@
 
  
     <!-- jQuery, Popper.js, and Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src = "node_modules/jquery/dist/jquery.min.js"></script>
     <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function(){
-            $("[data-toggle='tooltip']").tooltip();
-            $("[data-toggle='popover']").popover();
-            $('.carousel').carousel({
-                interval: 3000
-            });
-            $('#suscribirse, #consultas').on('show.bs.modal', function (e) {
-                console.log('El modal se esta mostrando');
-                $('#suscribirseBtn').removeClass('btn-primary');
-                $('#suscribirseBtn').addClass('btn-danger');
-                $('#suscribirseBtn').prop('disabled', true);
-            });
-            $('#suscribirse, #consultas').on('shown.bs.modal', function (e) {
-                console.log('El modal se mostró');
-            });
-            $('#suscribirse, #consultas').on('hide.bs.modal', function (e) {
-                console.log('El modal se esta ocultando');
-            });
-            $('#suscribirse, #consultas').on('hidden.bs.modal', function (e) {
-                console.log('El modal se ocultó');
-                $('#suscribirseBtn').prop('disabled', false);
-                $('#suscribirseBtn').removeClass('btn-danger');
-                $('#suscribirseBtn').addClass('btn-primary');
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
 
   </body>
