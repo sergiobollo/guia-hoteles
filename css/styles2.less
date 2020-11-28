@@ -1,0 +1,58 @@
+@amarillo: #eaf04d;
+@rojo: #ed3232;
+@verde: #35f032;
+
+.margenes(@top, @bottom){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
+.pad(@top, @bottom, @left, @right){
+    padding-top: @top;
+    padding-bottom: @bottom;
+    padding-left: @left;
+    padding-right: @right;
+}
+
+.fondo(@color){
+    background-color: @color;
+}
+
+.jumbotron {
+    .fondo(@verde);
+    .margenes(50px, 10px);
+    color: @amarillo;
+}
+footer {
+    .pad(10px, 0px, 12px, 12px);
+    .fondo(@rojo);
+    .margenes(10px, 0px);
+    color: @amarillo;
+}
+
+footer a {
+    color: @amarillo;
+}
+
+.card-hotel p {
+    .margenes(20px, 0px);
+    .pad(0px, 0px, 10px, 0px);
+    .fondo(@amarillo);
+    color: @rojo;
+}
+
+.btn-reserva {
+    border-radius: 5px;
+}
+
+address p span {
+    .pad(0px, 0px, 0px, 10px);
+}
+
+.tab-content {
+    .pad(10px, 0px, 0px, 0px);
+}
+
+.carousel {
+    max-width: 90vh;
+}
